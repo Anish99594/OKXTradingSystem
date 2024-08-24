@@ -2,9 +2,10 @@
 #include <curl/curl.h>
 #include "order_management.h"
 
-std::string apiKey = "YOUR_API_KEY";
-std::string secretKey = "YOUR_SECRET_KEY";
-std::string passphrase = "YOUR_PASSPHRASE";
+std::string apiKey = "2301c886-aeef-48bb-af07-156f485f0d18";
+std::string secretKey = "6ACE84DBDBB7A8246A9FDCC07579A18D";
+std::string passphrase = "Anish*2000";
+
 
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
     ((std::string*)userp)->append((char*)contents, size * nmemb);
